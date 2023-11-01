@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Insectos</title>
+    <style>
+      table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Insectos ROFI</h1>
+    <form id="insectosForm">
+        <label for="stars1">Insectos de 1 estrella:</label>
+        <input type="number" id="stars1" name="stars1" value="15">
+        <br>
+        <label for="stars2">Insectos de 2 estrellas:</label>
+        <input type="number" id="stars2" name="stars2" value="5">
+        <br>
+        <label for="stars3">Insectos de 3 estrellas:</label>
+        <input type="number" id="stars3" name="stars3" value="8">
+        <br>
+        <label for="stars4">Insectos de 4 estrellas:</label>
+        <input type="number" id="stars4" name="stars4" value="0">
+        <br>
+        <label for="stars5">Insectos de 5 estrellas:</label>
+        <input type="number" id="stars5" name="stars5" value="3">
+        <br>
+        <label for="stars6">Insectos de 6 estrellas:</label>
+        <input type="number" id="stars6" name="stars6" value="2">
+        <br>
+        <label for="stars7">Insectos de 7 estrellas:</label>
+        <input type="number" id="stars7" name="stars7" value="2">
+        <br>
+        <label for="stars8">Insectos de 8 estrellas:</label>
+        <input type="number" id="stars8" name="stars8" value="0">
+        <br>
+        <label for="stars9">Insectos de 9 estrellas:</label>
+        <input type="number" id="stars9" name="stars9" value="0">
+        <br>
+        <button type="button" onclick="calcularInsectos()">Calcular</button>
+      <button type="button" onclick="limpiarValores()">Limpiar</button>
+    </form>
+    <br>
+    <h2>Resultado:</h2>
+    <table id="resultado">
+        <tr>
+            <th>Estrellas</th>
+            <th>Cantidad de Insectos</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
