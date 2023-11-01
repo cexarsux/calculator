@@ -4,26 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Insectos</title>
-    <style>
-      table {
-            width: 50%;
-            margin: 0 auto;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-            text-align: center;
-        }
-
-        th, td {
-            padding: 10px;
-        }
-
-h2 {
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <h1>Calculadora de Insectos ROFI</h1>
@@ -54,6 +34,11 @@ h2 {
         <br>
         <label for="stars9">Insectos de 9 estrellas:</label>
         <input type="number" id="stars9" name="stars9" value="0">
+        <br>
+      <!-- Agregar input para insectos de 10 estrellas -->
+        <label for="stars10">Insectos de 10 estrellas:</label>
+        <input type="number" id="stars10" name="stars10" value="0">
+      <input type="hidden" id="stars11" name="stars11" value="0">
         <br>
         <button type="button" onclick="calcularInsectos()">Calcular</button>
       <button type="button" onclick="limpiarValores()">Limpiar</button>
